@@ -27,6 +27,8 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
+
+    list-style: none;
 }
 
 img {
@@ -52,16 +54,31 @@ img {
     color: var(--cloud-color);
 }
 
-.list {
-    list-style: none;
+/* Navigation */
+.navigation {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-/* Navigation */
+.menu {
+    display: flex;
+}
 
+.menu-items {
+    display: flex;
+}
+
+.contact-items {
+    display: flex;
+}
 
 /* Page Header */
 .page-header {
     background-color: var(--navy-blue-color);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .page-header-title {
@@ -76,8 +93,6 @@ img {
 .page-footer {
     background-color: var(--navy-blue-color);
 }
-
-
 
 .footer-descript {
     color: var(--cornflower-color);
@@ -122,14 +137,14 @@ img {
     border: none;
 }
 
-.main-btn {
+.page-header-btn {
     color: var(--body-background-color);
     background-color: var(--iris-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.main-btn:hover,
-.main-btn:focus {
+.page-header-btn:hover,
+.page-header-btn:focus {
     background-color: var(--ocean-color);
 }
 
@@ -144,6 +159,49 @@ img {
     color: var(--body-background-color);
     background-color: var(--ocean-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Features section */
+.features-card-items {
+    display: flex;
+}
+
+/* Directions section - What Are We Doing */
+.direction-items {
+    display: flex;
+}
+
+/* Our Teams */
+.team {
+    background-color: var(--cloud-color);
+}
+
+.team-card-items {
+    display: flex;
+}
+
+/* Portfolio */
+.portfolio {
+
+}
+
+.filter-items {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-item {
+
+}
+
+.portfolio-card-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-card-item {
+
 }
 
 /*---Cards---*/
@@ -169,10 +227,6 @@ img {
     text-transform: capitalize;
 }
 
-.part-title-hidden {
-    opacity: 0;
-}
-
 /*--Sergey Korobka - Part hidden--*/
 .visually-hidden {
     position: absolute;
@@ -185,4 +239,18 @@ img {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+/* ========== */
+.container {
+    /* ??? */
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+.main-container {
+    width: 494px;
 }
