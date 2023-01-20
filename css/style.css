@@ -208,6 +208,10 @@ img {
     background-color: var(--cloud-color);
 }
 
+.team-container {
+    padding: 120px 0;
+}
+
 .team-card-items {
     display: flex;
     margin-top: 72px;
@@ -322,12 +326,3 @@ img {
 .text-center {
     text-align: center;
 }
-
-.team-container {
-    padding: 120px 0;
-}
-
-/* ===== */
-/* section {
-    border: 1px solid red;
-} */
