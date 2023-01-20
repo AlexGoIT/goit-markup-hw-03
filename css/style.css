@@ -142,6 +142,12 @@ img {
 
 .footer-descript {
     color: var(--cornflower-color);
+    margin-top: 16px;
+}
+
+.footer-box {
+    padding: 100px 0;
+    width: 264px;
 }
 
 /*---Links---*/
@@ -189,17 +195,27 @@ img {
 }
 
 /* Features section */
-.features {
-
-}
-
 .features-card-items {
     display: flex;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.features-card-item:not(:last-child),
+.direction-item:not(:last-child),
+.team-card-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 /* Directions section - What Are We Doing */
 .direction-items {
     display: flex;
+    /* margin-top: 72px;
+    margin-bottom: 120px; */
+    /* margin-bottom: 120px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 27px auto 120px;
 }
 
 /* Our Teams */
@@ -209,6 +225,14 @@ img {
 
 .team-card-items {
     display: flex;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.team-card-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 32px;
 }
 
 /* Portfolio */
@@ -241,12 +265,14 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 32px;
 }
 
 .card-descript {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+    margin-top: 8px;
 }
 
 /*---Parts---*/
@@ -256,6 +282,10 @@ img {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    text-align: center;
+    margin-top: 120px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /*--Sergey Korobka - Part hidden--*/
@@ -279,4 +309,16 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
+    /* TEMP */
+    border: 1px solid green;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =====TEMP===== */
+section {
+    border: 1px solid red;
 }
