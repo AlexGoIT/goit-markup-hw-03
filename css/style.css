@@ -181,19 +181,6 @@ img {
     background-color: var(--ocean-color);
 }
 
-.filter-btn {
-    color: var(--iris-color);
-    background-color: var(--cloud-color);
-    border: 1px solid var(--cornflower-color);
-}
-
-.filter-btn:hover,
-.filter-btn:focus {
-    color: var(--body-background-color);
-    background-color: var(--ocean-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
 /* Features section */
 .features-card-items {
     display: flex;
@@ -203,7 +190,8 @@ img {
 
 .features-card-item:not(:last-child),
 .direction-item:not(:last-child),
-.team-card-item:not(:last-child) {
+.team-card-item:not(:last-child),
+.filter-item:not(:last-child) {
     margin-right: 24px;
 }
 
@@ -232,40 +220,66 @@ img {
 .team-card-item {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 32px;
 }
 
 /* Portfolio */
-.portfolio {
-
+/* Filter */
+.filter-btn {
+    color: var(--iris-color);
+    background-color: var(--cloud-color);
+    border: 1px solid var(--cornflower-color);
+    padding: 12px 24px;
 }
+
+.filter-btn:hover,
+.filter-btn:focus {
+    color: var(--body-background-color);
+    background-color: var(--ocean-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 
 .filter-items {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
 }
 
-.filter-item {
-
+.portfolio-wrapper {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .portfolio-card-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 72px;
 }
 
 .portfolio-card-item {
-
+    background-color: var(--body-background-color);
+    border: 1px solid var(--cornflower-color);
 }
 
+/* ============================ */
+
+.portfolio-card-item:not(:last-child()) {
+    margin-right: 24px;
+}
+
+/* ============================ */
+
 /*---Cards---*/
+.card-wrapper {
+    padding: 32px 16px;
+}
+
 .card-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
 }
 
 .card-descript {
@@ -284,8 +298,6 @@ img {
     text-transform: capitalize;
     text-align: center;
     margin-top: 120px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 /*--Sergey Korobka - Part hidden--*/
@@ -309,16 +321,8 @@ img {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
-    /* TEMP */
-    border: 1px solid green;
 }
 
 .text-center {
     text-align: center;
-}
-
-/* =====TEMP===== */
-section {
-    border: 1px solid red;
 }
