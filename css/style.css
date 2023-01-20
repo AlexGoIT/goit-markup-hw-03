@@ -82,10 +82,6 @@ img {
     display: flex;
 }
 
-.menu-item:not(:last-child) {
-    margin-right: 40px;
-}
-
 .contact-link {
     color: var(--slate-color);
 }
@@ -95,7 +91,8 @@ img {
     align-items: center;
 }
 
-.contact-item:not(:last-child) {
+.contact-item:not(:last-child),
+.menu-item:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -150,7 +147,7 @@ img {
     width: 264px;
 }
 
-/*---Links---*/
+/* Links */
 .link {
     text-decoration: none;
     line-height: 1.5;
@@ -167,7 +164,7 @@ img {
     margin-left: auto;
 }
 
-/*---Buttons---*/
+/* Buttons */
 .btn {
     cursor: pointer;
     font-weight: 500;
@@ -181,7 +178,7 @@ img {
     background-color: var(--ocean-color);
 }
 
-/* Features section */
+/* Features Section */
 .features-card-items {
     display: flex;
     margin-top: 120px;
@@ -195,7 +192,7 @@ img {
     margin-right: 24px;
 }
 
-/* Directions section - What Are We Doing */
+/* Directions Section - What Are We Doing */
 .direction-items {
     display: flex;
     /* margin-top: 72px;
@@ -206,7 +203,7 @@ img {
     margin: 27px auto 120px;
 }
 
-/* Our Teams */
+/* Our Teams Section */
 .team {
     background-color: var(--cloud-color);
 }
@@ -222,7 +219,7 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-/* Portfolio */
+/* Portfolio Section */
 /* Filter */
 .filter-btn {
     color: var(--iris-color);
@@ -237,7 +234,6 @@ img {
     background-color: var(--ocean-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 
 .filter-items {
     display: flex;
@@ -262,13 +258,13 @@ img {
     border: 1px solid var(--cornflower-color);
 }
 
-/* ============================ */
-
-.portfolio-card-item:not(:last-child()) {
-    margin-right: 24px;
+.portfolio-card-item:nth-child(n + 4) {
+    margin-top: 48px;
 }
 
-/* ============================ */
+.portfolio-card-item:not(:nth-child(3n)) {
+    margin-right: 21px;
+}
 
 /*---Cards---*/
 .card-wrapper {
@@ -297,7 +293,7 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 
 /*--Sergey Korobka - Part hidden--*/
@@ -326,3 +322,12 @@ img {
 .text-center {
     text-align: center;
 }
+
+.team-container {
+    padding: 120px 0;
+}
+
+/* ===== */
+/* section {
+    border: 1px solid red;
+} */
