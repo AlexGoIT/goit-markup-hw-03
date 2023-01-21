@@ -217,12 +217,10 @@ img {
     background-color: var(--cloud-color);
 }
 
-.team-container {
-    padding: 120px 0;
-}
-
 .team-card-items {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 72px;
 }
 
