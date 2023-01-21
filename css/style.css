@@ -95,9 +95,9 @@ img {
     align-items: center;
 }
 
-.contact-item:not(:last-child),
-.menu-item:not(:last-child) {
-    margin-right: 40px;
+.contact-items,
+.menu-items {
+    gap: 40px;
 }
 
 /* Studio Page Header */
@@ -121,19 +121,6 @@ img {
     letter-spacing: 0.02em;
     color: var(--body-background-color);
     text-align: center;
-}
-
-.page-header-btn {
-    font-size: 16px;
-    color: var(--body-background-color);
-    background-color: var(--iris-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    padding: 16px 32px;
-    margin-top: 48px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border: none;
 }
 
 /* Footer */
@@ -182,6 +169,19 @@ img {
     background-color: var(--ocean-color);
 }
 
+.page-header-btn {
+    font-size: 16px;
+    color: var(--body-background-color);
+    background-color: var(--iris-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+}
+
 /* Features Section */
 .features-card-items {
     display: flex;
@@ -193,11 +193,11 @@ img {
     width: 264px;
 }
 
-.features-card-item:not(:last-child),
-.direction-item:not(:last-child),
-.team-card-item:not(:last-child),
-.filter-item:not(:last-child) {
-    margin-right: 24px;
+.features-card-items,
+.direction-items,
+.team-card-items,
+.filter-items {
+    gap: 24px;
 }
 
 /* Directions Section - What Are We Doing */
@@ -256,29 +256,16 @@ img {
     padding-bottom: 120px;
 }
 
-/* .portfolio-wrapper {
-    padding-top: 96px;
-    padding-bottom: 120px;
-} */
-
 .portfolio-card-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 72px;
+    gap: 48px 24px;
 }
 
 .portfolio-card-item {
     background-color: var(--body-background-color);
-    /* border: 1px solid var(--cornflower-color); */
-}
-
-.portfolio-card-item:nth-child(n + 4) {
-    margin-top: 48px;
-}
-
-.portfolio-card-item:not(:nth-child(3n)) {
-    margin-right: 24px;
 }
 
 /*---Cards---*/
@@ -286,7 +273,7 @@ img {
     padding: 32px 16px;
     border: 1px solid var(--cornflower-color);
     background-color: var(--body-background-color);
-    border-top-style: none;
+    /* border-top-style: none; */
     box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 }
 
@@ -344,8 +331,3 @@ img {
 .section-set {
     padding: 120px 0;
 }
-
-/* TEMP */
-/* section {
-    border: 1px solid red;
-} */
