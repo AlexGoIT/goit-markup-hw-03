@@ -109,7 +109,7 @@ img {
 
 .studio-page-header-content {
     width: 496px;
-    justify-content: center;
+    /* justify-content: center; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -269,14 +269,14 @@ img {
 .portfolio-card-item {
     background-color: var(--body-background-color);
     flex-basis: calc((100% - 2 * 24px) / 3);
+    border-bottom: 1px solid var(--cornflower-color);
 }
 
 /*---Cards---*/
 .card-wrapper {
     padding: 32px 16px;
-    border: 1px solid var(--cornflower-color);
+    /* border-bottom: 1px solid var(--cornflower-color); */
     background-color: var(--body-background-color);
-    /* border-top-style: none; */
     box-shadow: 0px 1px 6px rgb(46 47 66 / 8%);
 }
 
@@ -331,7 +331,7 @@ img {
     text-align: center;
 }
 
-.section-set {
+.section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
