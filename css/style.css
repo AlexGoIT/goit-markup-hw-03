@@ -10,7 +10,6 @@
 
 body {
     font-family: Roboto, sans-serif;
-    /* font-size: 16px; */
     color: var(--navy-blue-color);
     background-color: var(--body-background-color);
 }
@@ -27,7 +26,6 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-
     list-style: none;
 }
 
@@ -109,7 +107,6 @@ img {
 
 .studio-page-header-content {
     width: 496px;
-    /* justify-content: center; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -126,6 +123,8 @@ img {
 /* Footer */
 .page-footer {
     background-color: var(--navy-blue-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-descript {
@@ -134,7 +133,6 @@ img {
 }
 
 .footer-container {
-    padding: 100px 0;
     width: 264px;
 }
 
@@ -201,11 +199,15 @@ img {
 }
 
 /* Directions Section - What Are We Doing */
+.directions {
+    padding-bottom: 120px;
+}
+
 .direction-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 72px auto 120px;
+    margin-top: 72px;
 }
 
 .direction-item {
@@ -269,7 +271,6 @@ img {
 .portfolio-card-item {
     background-color: var(--body-background-color);
     flex-basis: calc((100% - 2 * 24px) / 3);
-    border-bottom: 1px solid var(--cornflower-color);
 }
 
 .portfolio-card-link {
@@ -280,6 +281,11 @@ img {
 
 .portfolio-title-link {
     color: var(--navy-blue-color);
+}
+
+.portfolio-card-border {
+    border: 1px solid var(--cornflower-color);
+    border-top: none;
 }
 
 /*---Cards---*/
